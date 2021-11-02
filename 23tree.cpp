@@ -9,7 +9,7 @@ node* Tree:: searchLeaf(node* t, int key )
 	if (t->isleaf) return t;
 	if (key < t->key[0])
 		return searchLeaf(t->child[0], key);
-	else if ((key < t->key[1]&&t->num==2) || t->num == 1)
+	else if ((key < t->key[1] && t->num == 2) || t->num == 1)
 		return searchLeaf(t->child[1], key);
 	else
 		return searchLeaf(t->child[2], key);
